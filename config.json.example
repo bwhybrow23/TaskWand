@@ -1,3 +1,20 @@
 {
-  
+  "mode": "development",
+  "port": 3094,
+  "host": "localhost",
+  "jwt_secret": "",
+  "mongo": {
+    "host": "localhost",
+    "port": 27017,
+    "db": "taskwand",
+    "user": "",
+    "password": ""
+  },
+  "mongoDev": {
+    "host": "localhost",
+    "port": 27017,
+    "db": "taskwand_dev",
+    "user": "",
+    "password": ""
+  }
 }
