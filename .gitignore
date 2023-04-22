@@ -1,0 +1,19 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Node
+node_modules/
+.npm
+build/Release
+package-lock.json
+
+# dotenv environment variables file
+.env
+.env.test
+
+config.json

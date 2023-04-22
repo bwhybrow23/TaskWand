@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  taskwand:
+    container_name: taskwand
+    ports:
+      - '3094:3094'
+    volumes:
+      # - '/srv/unsaidwords:/srv/unsaidwords'
+    restart: unless-stopped
+    image: bwhybrow23/taskwand
+    network_mode: bridge

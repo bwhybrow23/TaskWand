@@ -1,0 +1,30 @@
+{
+  "name": "taskwand",
+  "version": "1.0.0",
+  "description": "TaskWand is a powerful web-based task management application that helps you stay organized and productive. With TaskWand, you can create tasks, set due dates, add descriptions, and assign priority levels. You can also mark tasks as complete or delete them when they're no longer needed.",
+  "main": "app.js",
+  "scripts": {
+    "build": "docker build -t bwhybrow23/taskwand ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bwhybrow23/TaskWand.git"
+  },
+  "author": "bwhybrow23",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bwhybrow23/TaskWand/issues"
+  },
+  "homepage": "https://github.com/bwhybrow23/TaskWand#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.4"
+  }
+}
