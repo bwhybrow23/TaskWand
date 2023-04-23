@@ -57,14 +57,14 @@ if (config.mode === 'production') {
  * MongoDB Database
  * 
  */
-// const encodedPassword = encodeURIComponent(mongo.password);
-// const connectionURL = `mongodb://${mongo.user}:${encodedPassword}@${mongo.host}:${mongo.port}/${mongo.db}?authSource=admin`;
-// console.log(`Creating MongoDB connection at ${mongo.host}:${mongo.port}`);
+const encodedPassword = encodeURIComponent(mongo.password);
+const connectionURL = `mongodb://${mongo.user}:${encodedPassword}@${mongo.host}:${mongo.port}/${mongo.db}?authSource=admin`;
+console.log(`Creating MongoDB connection at ${mongo.host}:${mongo.port}`);
 
-// mongoose.set('strictQuery', false);
-// mongoose.connect(connectionURL, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
-//   console.log('Connected to MongoDB');
-// }).catch((error) => {
-//   console.log('Error connecting to MongoDB');
-//   console.log(error);
-// });
+mongoose.set('strictQuery', false);
+mongoose.connect(connectionURL, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
+  console.log('Connected to MongoDB');
+}).catch((error) => {
+  console.log('Error connecting to MongoDB');
+  console.log(error);
+});
