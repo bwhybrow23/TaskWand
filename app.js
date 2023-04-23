@@ -39,6 +39,8 @@ app.listen(port, () => {
 
 // Routes
 app.use('/', require('./routers/root'));
+app.use('/auth', require('./routers/auth'));
+app.use('/tasks', require('./routers/tasks'));
 
 /**
  * 

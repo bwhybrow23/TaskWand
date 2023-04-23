@@ -18,6 +18,13 @@ const userSchema = new mongoose.Schema({
     type: String,
     default: 'member'
   },
+  emailVerified: {
+    type: Boolean,
+    default: false
+  },
+  emailVerificationCode: {
+    type: String
+  },
   dateCreated: {
     type: Date,
     default: Date.now
